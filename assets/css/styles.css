@@ -1,0 +1,657 @@
+:root {
+    --color-yellow: #ffff00;
+    --color-yellow-alt: #f8f184;
+    --color-blue: #19587d;
+    --color-red: #B11313;
+    --color-black: #000;
+    --color-black-alt: #0d0e09;
+    --color-gray: #c4c4c4;
+    --color-white: #fff;
+    --color-grad-00: #eddebf;
+    --color-grad-11: #890008;
+}
+
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'space-grotesk';
+    src: url(../police/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+.text-yellow {
+    color: var(--color-yellow);
+}
+
+h1,
+h2 {
+    font-family: 'rajdhani';
+    font-size: 36px;
+}
+
+p {
+    font-size: clamp(12px, 18px, 22px);
+}
+
+button {
+    font-family: 'rajdhani';
+    font-size: 20px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-black);
+    font-family: 'space-grotesk';
+}
+
+header {
+    position: absolute;
+    top: 5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*LES LIGNES*/
+
+.tLine {
+    position: absolute;
+    left: 102px;
+    top: 132px;
+    width: calc(100vw - 218px);
+    border-top: 2px solid rgba(188, 188, 188, 0.5);
+}
+
+.lLine,
+.rLine {
+    position: absolute;
+    border-left: 2px solid rgba(188, 188, 188, 0.5);
+}
+
+.lLine {
+    left: 102px;
+}
+
+.rLine {
+    right: 102px;
+}
+
+
+/* */
+
+.container,
+.container-fluid {
+    margin: auto;
+}
+
+.container {
+    max-width: calc(100vw - 220px);
+    padding: 6px 8%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    width: 100%;
+}
+
+.navbar .container {
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-nav .nav-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline 2px;
+}
+
+
+/* Top header*/
+
+#top {
+    padding-top: 134px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../img/Home/Bathome1.png);
+    display: flex;
+    flex-direction: column;
+}
+
+#top .carte {
+    color: var(--color-white);
+    width: 60%;
+    margin: auto;
+}
+
+[type="submit"],
+#top .carte a {
+    font-family: 'rajdhani';
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 40%, rgba(137, 0, 8, 0.4) 60%);
+}
+
+.top-link {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-link a {
+    display: block;
+    width: 187px;
+}
+
+#top #arrow {
+    display: block;
+    margin: auto;
+    width: 50px;
+    margin-top: 2em;
+}
+
+
+/* cinema */
+
+#cinema {
+    color: #fff
+}
+
+.card-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-3 div {
+    width: 30%;
+}
+
+.card-3 div>img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* SLIDER 1*/
+
+.slider {
+    margin: 2.5rem auto;
+    width: 100%;
+}
+
+.slider .slider-item {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+}
+
+
+/* NEMESIS */
+
+#nemesis {
+    color: #fff;
+}
+
+
+/* MULTIMEDIA */
+
+#multimedia .container {
+    color: #fff;
+}
+
+#multimedia button {
+    position: relative;
+    top: 150px;
+    background-color: transparent;
+    border: none;
+}
+
+#multimedia button.right {
+    right: -92.5%
+}
+
+#multimedia .slider-media {
+    display: none;
+}
+
+#multimedia .carte-slider-top {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    max-height: 300px;
+}
+
+#multimedia .carte-slider {
+    margin: 1rem auto;
+    display: flex;
+    width: 60%;
+    max-height: 300px;
+}
+
+#multimedia .carte-body {
+    padding: 10px;
+    width: 80%;
+    background: linear-gradient(135deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 60%);
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+#multimedia .carte-img {
+    width: 30%;
+}
+
+#multimedia .carte-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#multimedia .carte-body h2 {
+    font-family: 'space-grotesk';
+    font-size: 12px;
+    color: #bcbcbc;
+    font-weight: bold;
+}
+
+#multimedia span.subtitle {
+    font-size: 22px;
+}
+
+#multimedia .carte-body p {
+    font-size: 12px;
+}
+
+#multimedia .carte-body span.source {
+    font-weight: bold;
+}
+
+#multimedia iframe {
+    aspect-ratio: 16/9;
+    height: 100%;
+    width: 100%;
+}
+
+#multimedia iframe:hover {
+    box-shadow: 0px 0px 1rem var(--color-white);
+}
+
+
+/* CONTACT */
+
+#contact {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 60%);
+}
+
+.form h2 {
+    font-family: 'space-grotesk';
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+#contact .form {
+    width: 50%;
+    margin: auto;
+}
+
+.form .title {
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin: 18px 0;
+}
+
+.form input[type="email"],
+.form input[type="text"] {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--color-grad-00);
+    padding: 10px 0;
+    color: #eddebf;
+    margin-top: 20px;
+}
+
+form .info {
+    margin-top: 20px;
+    border-bottom: 1px solid var(--color-grad-00);
+    color: #eddebf;
+}
+
+.form label {
+    color: #eddebf;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: #eddebf;
+}
+
+.btn-group {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form button {
+    width: 150px;
+    border: 2px solid var(--color-grad-00);
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+}
+
+[type="submit"] {
+    margin: 2rem auto;
+    display: block;
+    width: 200px;
+    border: none;
+}
+
+
+/*menu deroulant */
+
+.menu {
+    width: 100%;
+    color: var(--color-grad-00);
+}
+
+.menu-btn,
+li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-btn {
+    width: 100%;
+    padding: 10px 0 5px;
+    font-size: 14px;
+    border-bottom: 2px solid var(--color-gray);
+    justify-content: space-between;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn .icon {
+    width: 22px;
+    margin-right: 5px;
+}
+
+.menu-btn img {
+    height: 100%;
+    width: 100%;
+    transform: rotate(90deg);
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    display: none;
+    background-color: #0d0e09;
+    background-image: linear-gradient(135deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 60%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.content .list {
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    padding: 10px 5px;
+    border-bottom: 2px solid var(--color-white);
+    font-size: 16px;
+}
+
+.list li:hover,
+li.selected {
+    color: var(--color-black-alt);
+    background: rgba(237, 222, 191, 1);
+}
+
+
+/* CITATION */
+
+#citation .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#citation .wrapper {
+    text-align: center;
+    color: white;
+    width: 60%;
+    min-height: 100px;
+}
+
+.citation-carte .carte-texte {
+    padding: 1.25rem;
+}
+
+.citation-carte .carte-auteur {
+    padding: 1.25em;
+    color: #c4c4c4;
+    font-family: 'radjhani';
+}
+
+.indicator {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.indicator-item {
+    width: 2px;
+    height: 2px;
+    display: inline-block;
+    padding: 4px;
+    border: 2px solid var(--color-blue);
+    border-radius: 50%;
+}
+
+.indicator-active {
+    padding: 6px;
+    border: 3px solid var(--color-blue);
+    background-color: var(--color-blue);
+}
+
+#citation .lq {
+    align-self: flex-start;
+}
+
+#citation .rq {
+    align-self: flex-end;
+}
+
+
+/* Footer */
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .duo {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* TAILLE DES ICONE */
+
+.ic-0 {
+    width: 25px;
+    height: 25px;
+}
+
+.ic-1 {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* SCORLLBAR */
+
+.scroll {
+    z-index: 15;
+    top: 25%;
+    width: 70px;
+    position: absolute;
+    right: 68px
+}
+
+.scroll img {
+    display: block;
+    margin: auto;
+}
+
+.scroll .ic-1 {
+    width: 20px;
+    height: 20px;
+}
+
+.scroll img:nth-of-type(3) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.scroll .arrow2 {
+    width: 70px;
+}
+
+@media screen and (max-width:768px) {
+    .lLine,
+    .rLine,
+    .tLine,
+    .scroll {
+        display: none;
+    }
+    .container {
+        max-width: 90vh;
+    }
+    #top .carte {
+        width: 100%;
+    }
+    #top {
+        height: 500px;
+    }
+    #top .top-link {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-3 div {
+        width: 70%;
+    }
+    #multimedia button {
+        display: none;
+    }
+    #multimedia .carte-slider {
+        width: 80%;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        max-height: none;
+    }
+    #multimedia .slider-media .wrapper {
+        display: flex !important;
+        flex-direction: column;
+    }
+    #multimedia .carte-slider .carte-img img {
+        width: 100%;
+    }
+    #multimedia .carte-slider .carte-img,
+    #multimedia .carte-slider .carte-body {
+        width: 100%;
+    }
+    #multimedia .carte-slider .carte-body {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #top {
+        min-height: 700px;
+        max-height: 900px;
+    }
+}
+
+
+/* JS */
+
+.scroll-show>* {
+    opacity: 0;
+    transform: scale(0);
+    /* transform: translateY(10%); */
+}
+
+.show {
+    opacity: 1;
+    transform: scale(1);
+    /* transform: translateY(0); */
+    transition: 2s;
+}
+
+h2,
+#top .carte {
+    position: relative;
+    left: -250%;
+}
